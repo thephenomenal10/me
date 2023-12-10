@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Divider, IconButton, Typography } from "@mui/material";
+import { Avatar, Box, Divider, IconButton, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import TypewriterComponent from "typewriter-effect";
+import Tilt from "react-parallax-tilt";
 
 import developerSvg from "./../../assets/developer.svg";
+import me from "./../../assets/me.jpeg";
 import { primaryColor } from "../../constants/colors";
 
 const HomePage = () => {
@@ -87,22 +89,49 @@ const HomePage = () => {
           paddingX: "5rem",
         }}
       >
-        <Typography variant="h4" sx={{ letterSpacing: "2px" }}>
-          LET ME{" "}
-          <span style={{ color: primaryColor, fontWeight: "900" }}>
-            INTRODUCE{" "}
-          </span>
-          MYSELF
-        </Typography>
-        <Divider
+        <>
+          <Typography variant="h4" sx={{ letterSpacing: "2px" }}>
+            LET ME{" "}
+            <span style={{ color: primaryColor, fontWeight: "900" }}>
+              INTRODUCE{" "}
+            </span>
+            MYSELF
+          </Typography>
+          <Divider
+            sx={{
+              color: primaryColor,
+              flex: 1,
+              width: { xs: "30px", sm: "70px", md: "100px", lg: "130px" },
+              borderColor: "unset",
+              borderWidth: "1px",
+            }}
+          />
+        </>
+        <Box
           sx={{
-            color: primaryColor,
-            flex: 1,
-            width: { xs: "30px", sm: "70px", md: "100px", lg: "130px" },
-            borderColor: "unset",
-            borderWidth: "1px",
+            display: "flex",
+            paddingTop: "3rem",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: "10rem",
           }}
-        />
+        >
+          <Typography
+            variant="h6"
+            sx={{ letterSpacing: "1.2px", lineHeight: "2.2rem" }}
+          >
+            💻 A versatile Full-stack developer passionate about crafting with{" "}
+            <span style={{ color: primaryColor }}> JS and Flutter.</span>
+            <br /> Constantly refining skills for the next level. Solving{" "}
+            <span style={{ color: primaryColor }}>real-world </span>
+            problems through code is my forte. <br /> Off-screen, you'll find me
+            exploring new places. Let's build, innovate, and journey together!
+            🚀🚀
+          </Typography>
+          <Tilt>
+            <Avatar src={me} sx={{ height: "300px", width: "300px" }} />
+          </Tilt>
+        </Box>
       </Box>
     </Box>
   );
