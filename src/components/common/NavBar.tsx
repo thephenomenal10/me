@@ -28,7 +28,7 @@ const NavBar = () => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2, color: primaryColor }}>
+      <Typography variant="h4" sx={{ my: 2, color: primaryColor }}>
         Ss
       </Typography>
       <Divider />
@@ -72,7 +72,7 @@ const NavBar = () => {
             <MenuIcon />
           </IconButton>
           <Typography
-            variant="h6"
+            variant="h4"
             component="div"
             sx={{
               flexGrow: 1,
