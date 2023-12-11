@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import { primaryColor } from "../../constants/colors";
 
 const Footer = () => {
   return (
@@ -11,7 +12,9 @@ const Footer = () => {
         marginTop: "auto",
       }}
     >
-      <Typography variant="body1">Designed and Developed by Sahyog Saini</Typography>
+      <Typography variant="body1">
+        Designed and Developed by <span style={{ color: primaryColor }}> Sahyog Saini</span>
+      </Typography>
       <Typography variant="body1">Copyright © 2023</Typography>
     </Box>
   );
