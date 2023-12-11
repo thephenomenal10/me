@@ -9,6 +9,10 @@ import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { primaryColor, whiteColor } from "../../../../constants/colors";
 
 const SocialButton = () => {
+  const handleOnClick = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <Box
       sx={{
@@ -21,6 +25,7 @@ const SocialButton = () => {
     >
       <IconButton
         color="primary"
+        onClick={() => handleOnClick("https://github.com/thephenomenal10")}
         sx={{
           height: { xs: "40px", md: "50px", lg: "50px" },
           width: { xs: "40px", md: "50px", lg: "50px" },
@@ -35,6 +40,7 @@ const SocialButton = () => {
       </IconButton>
       <IconButton
         color="primary"
+        onClick={() => handleOnClick("https://www.linkedin.com/in/sahyog-saini-4b511617b/")}
         sx={{
           height: { xs: "40px", md: "50px", lg: "50px" },
           width: { xs: "40px", md: "50px", lg: "50px" },
@@ -49,6 +55,7 @@ const SocialButton = () => {
       </IconButton>
       <IconButton
         color="primary"
+        onClick={() => handleOnClick("https://www.instagram.com/sahyog.saini/")}
         sx={{
           height: { xs: "40px", md: "50px", lg: "50px" },
           width: { xs: "40px", md: "50px", lg: "50px" },
@@ -63,6 +70,7 @@ const SocialButton = () => {
       </IconButton>
       <IconButton
         color="primary"
+        onClick={() => handleOnClick("https://twitter.com/SainiSahyog")}
         sx={{
           height: { xs: "40px", md: "50px", lg: "50px" },
           width: { xs: "40px", md: "50px", lg: "50px" },
