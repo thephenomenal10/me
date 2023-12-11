@@ -6,7 +6,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import developerSvg from "./../../../assets/developer.svg";
 import me from "./../../../assets/me.jpeg";
-import { primaryColor, whiteColor } from "../../../constants/colors";
+import { primaryColor } from "../../../constants/colors";
 import SocialButton from "./component/SocialButton";
 import Footer from "../../common/Footer";
 
