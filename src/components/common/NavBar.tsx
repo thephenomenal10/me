@@ -27,7 +27,6 @@ const NavBar = () => {
     { item: "Home", path: ROUTER.HOME.path },
     { item: "About", path: ROUTER.ABOUT.path },
     { item: "Experience", path: ROUTER.WORK_EXPERIENCE.path },
-    { item: "Contact", path: ROUTER.CONTACT.path },
     { item: "Resume", path: ROUTER.RESUME.path },
   ];
 

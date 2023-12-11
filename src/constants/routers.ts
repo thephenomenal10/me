@@ -14,9 +14,6 @@ const ROUTER = {
   RESUME: {
     path: "/resume",
   },
-  CONTACT: {
-    path: "/contact",
-  },
 };
 
 export { ROUTER };
