@@ -1,12 +1,14 @@
 import React from "react";
 import { Avatar, Box, Divider, IconButton, Typography } from "@mui/material";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import TypewriterComponent from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import developerSvg from "./../../assets/developer.svg";
-import me from "./../../assets/me.jpeg";
-import { primaryColor } from "../../constants/colors";
+import developerSvg from "./../../../assets/developer.svg";
+import me from "./../../../assets/me.jpeg";
+import { primaryColor, whiteColor } from "../../../constants/colors";
+import SocialButton from "./component/SocialButton";
+import Footer from "../../common/Footer";
 
 const HomePage = () => {
   const scrollToLowerSection = () => {
@@ -87,10 +89,12 @@ const HomePage = () => {
           minHeight: "calc(100vh - 4rem)",
           height: "100%",
           paddingX: "5rem",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <>
-          <Typography variant="h4" sx={{ letterSpacing: "2px" }}>
+          <Typography variant="h5" sx={{ letterSpacing: "2px" }}>
             LET ME{" "}
             <span style={{ color: primaryColor, fontWeight: "900" }}>
               INTRODUCE{" "}
@@ -100,7 +104,7 @@ const HomePage = () => {
           <Divider
             sx={{
               color: primaryColor,
-              flex: 1,
+              // flex: 1,
               width: { xs: "30px", sm: "70px", md: "100px", lg: "130px" },
               borderColor: "unset",
               borderWidth: "1px",
@@ -118,7 +122,7 @@ const HomePage = () => {
         >
           <Typography
             variant="h6"
-            sx={{ letterSpacing: "1.2px", lineHeight: "2.2rem" }}
+            sx={{ letterSpacing: "1.1px", lineHeight: "2.2rem" }}
           >
             💻 A versatile Full-stack developer passionate about crafting with{" "}
             <span style={{ color: primaryColor }}> JS and Flutter.</span>
@@ -132,6 +136,26 @@ const HomePage = () => {
             <Avatar src={me} sx={{ height: "300px", width: "300px" }} />
           </Tilt>
         </Box>
+        <Box sx={{ paddingTop: "3rem" }}>
+          <Typography variant="h5" sx={{ letterSpacing: "2px" }}>
+            FEEL FREE TO
+            <span style={{ color: primaryColor, fontWeight: "900" }}>
+              {" "}
+              CONNECT
+            </span>
+          </Typography>
+          <Divider
+            sx={{
+              color: primaryColor,
+              flex: 1,
+              width: { xs: "30px", sm: "70px", md: "100px", lg: "130px" },
+              borderColor: "unset",
+              borderWidth: "1px",
+            }}
+          />
+          <SocialButton />
+        </Box>
+        <Footer />
       </Box>
     </Box>
   );

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 
-import HomePage from "../components/pages/HomePage";
+import HomePage from "../components/pages/Home/HomePage";
 import { ROUTER } from "../constants/routers";
 import ErrorHandler from "../components/common/ErrorHandler";
 import Loading from "../components/common/Loading";
