@@ -56,7 +56,7 @@ const HomePage = () => {
               paddingTop: { xs: "1rem", sm: "0.5rem", md: "1rem", lg: "1.5rem" },
             }}
           >
-            I'M <span style={{ color: primaryColor }}>SAHYOG SAINI</span>
+            I'M <span style={{ color: primaryColor }}>{"<SAHYOG SAINI/>"}</span>
           </Typography>
           <Typography
             sx={{
