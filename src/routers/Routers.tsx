@@ -6,6 +6,7 @@ import { ROUTER } from "../constants/routers";
 import ErrorHandler from "../components/common/ErrorHandler";
 import Loading from "../components/common/Loading";
 import NavBar from "../components/common/NavBar";
+import ResumePage from "../components/pages/Resume/ResumePage";
 
 const routers = [
   {
@@ -21,6 +22,11 @@ const routers = [
   {
     path: ROUTER.ABOUT.path,
     element: <AboutMePage />,
+    caseSensitive: true,
+  },
+  {
+    path: ROUTER.RESUME.path,
+    element: <ResumePage />,
     caseSensitive: true,
   },
 ];
