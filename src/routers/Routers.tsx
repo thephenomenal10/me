@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 
-import HomePage from "../components/pages/Home/HomePage";
+import { HomePage, AboutMePage } from "../components/pages";
 import { ROUTER } from "../constants/routers";
 import ErrorHandler from "../components/common/ErrorHandler";
 import Loading from "../components/common/Loading";
+import NavBar from "../components/common/NavBar";
 
 const routers = [
   {
@@ -17,11 +18,17 @@ const routers = [
     element: <HomePage />,
     caseSensitive: true,
   },
+  {
+    path: ROUTER.ABOUT.path,
+    element: <AboutMePage />,
+    caseSensitive: true,
+  },
 ];
 
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
+      <NavBar />
       <ErrorHandler>
         <Suspense fallback={<Loading />}>
           <Routes>

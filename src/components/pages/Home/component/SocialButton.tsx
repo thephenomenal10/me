@@ -13,16 +13,17 @@ const SocialButton = () => {
     <Box
       sx={{
         display: "flex",
-        gap: "1.5rem",
-        paddingTop: "3rem",
+        flexWrap: "wrap",
+        gap: { xs: "1.1rem", sm: "1.2rem", md: "1.5rem", lg: "1.5rem" },
+        paddingTop: "4rem",
         justifyContent: "center",
       }}
     >
       <IconButton
         color="primary"
         sx={{
-          height: "50px",
-          width: "50px",
+          height: { xs: "40px", md: "50px", lg: "50px" },
+          width: { xs: "40px", md: "50px", lg: "50px" },
           backgroundColor: whiteColor,
           "&:hover": {
             boxShadow: "0 0 10px 3px rgba(66, 231, 235, 0.5)",
@@ -35,8 +36,8 @@ const SocialButton = () => {
       <IconButton
         color="primary"
         sx={{
-          height: "50px",
-          width: "50px",
+          height: { xs: "40px", md: "50px", lg: "50px" },
+          width: { xs: "40px", md: "50px", lg: "50px" },
           backgroundColor: whiteColor,
           "&:hover": {
             boxShadow: "0 0 10px 3px rgba(66, 231, 235, 0.5)",
@@ -49,8 +50,8 @@ const SocialButton = () => {
       <IconButton
         color="primary"
         sx={{
-          height: "50px",
-          width: "50px",
+          height: { xs: "40px", md: "50px", lg: "50px" },
+          width: { xs: "40px", md: "50px", lg: "50px" },
           backgroundColor: whiteColor,
           "&:hover": {
             boxShadow: "0 0 10px 3px rgba(66, 231, 235, 0.5)",
@@ -63,8 +64,8 @@ const SocialButton = () => {
       <IconButton
         color="primary"
         sx={{
-          height: "50px",
-          width: "50px",
+          height: { xs: "40px", md: "50px", lg: "50px" },
+          width: { xs: "40px", md: "50px", lg: "50px" },
           backgroundColor: whiteColor,
           "&:hover": {
             boxShadow: "0 0 10px 3px rgba(66, 231, 235, 0.5)",

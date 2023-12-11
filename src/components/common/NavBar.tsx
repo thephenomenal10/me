@@ -13,13 +13,24 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { primaryColor } from "../../constants/colors";
+import { ROUTER } from "../../constants/routers";
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
   const drawerWidth = 240;
-  const navItems = ["Home", "About", "Experience", "Contact", "Resume"];
+  const navItems = [
+    { item: "Home", path: ROUTER.HOME.path },
+    { item: "About", path: ROUTER.ABOUT.path },
+    { item: "Experience", path: ROUTER.WORK_EXPERIENCE.path },
+    { item: "Contact", path: ROUTER.CONTACT.path },
+    { item: "Resume", path: ROUTER.RESUME.path },
+  ];
+
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -27,20 +38,23 @@ const NavBar = () => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", backgroundColor: "black", height: "100%" }}>
       <Typography variant="h4" sx={{ my: 2, color: primaryColor }}>
         Ss
       </Typography>
       <Divider />
       <List>
-        {navItems.map(item => (
-          <ListItem key={item} disablePadding>
+        {navItems.map((item, i) => (
+          <ListItem key={i} disablePadding>
             <ListItemButton
               sx={{
                 textAlign: "center",
               }}
+              onClick={() => {
+                navigate(item.path);
+              }}
             >
-              <ListItemText primary={item} />
+              <ListItemText primary={item?.item} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -82,10 +96,13 @@ const NavBar = () => {
             Ss
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map(item => (
+            {navItems.map((item, i) => (
               <Button
                 variant="text"
-                key={item}
+                key={i}
+                onClick={() => {
+                  navigate(item.path);
+                }}
                 sx={{
                   color: "#fff",
                   textDecoration: "none",
@@ -95,7 +112,7 @@ const NavBar = () => {
                   },
                 }}
               >
-                {item}
+                {item?.item}
               </Button>
             ))}
           </Box>

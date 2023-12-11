@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+
 import { primaryColor } from "../../constants/colors";
 
 const Footer = () => {
@@ -10,6 +10,7 @@ const Footer = () => {
         justifyContent: "space-between",
         paddingTop: "2.5rem",
         marginTop: "auto",
+        gap: "2rem",
       }}
     >
       <Typography variant="body1">
