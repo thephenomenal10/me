@@ -25,7 +25,7 @@ const Router: React.FC = () => {
       <ErrorHandler>
         <Suspense fallback={<Loading />}>
           <Routes>
-            {routers.map((route) => (
+            {routers.map(route => (
               <Route key={route.path} {...route} />
             ))}
           </Routes>

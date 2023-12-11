@@ -23,7 +23,7 @@ const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
+    setMobileOpen(prevState => !prevState);
   };
 
   const drawer = (
@@ -33,7 +33,7 @@ const NavBar = () => {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {navItems.map(item => (
           <ListItem key={item} disablePadding>
             <ListItemButton
               sx={{
@@ -48,8 +48,7 @@ const NavBar = () => {
     </Box>
   );
 
-  const container =
-    window !== undefined ? () => window.document.body : undefined;
+  const container = window !== undefined ? () => window.document.body : undefined;
 
   return (
     <Box>
@@ -83,7 +82,7 @@ const NavBar = () => {
             Ss
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
+            {navItems.map(item => (
               <Button
                 variant="text"
                 key={item}

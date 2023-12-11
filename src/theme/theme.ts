@@ -1,11 +1,5 @@
 import { createTheme } from "@mui/material";
-import {
-  offWhite,
-  primaryColor,
-  primaryDarkColor,
-  primaryLightColor,
-  whiteColor,
-} from "../constants/colors";
+import { offWhite, primaryColor, primaryDarkColor, primaryLightColor, whiteColor } from "../constants/colors";
 import { Theme } from "@emotion/react";
 import "@fontsource/poppins";
 

@@ -20,12 +20,7 @@ const HomePage = () => {
   const roles = (
     <TypewriterComponent
       options={{
-        strings: [
-          "Software Developer",
-          "Freelancer",
-          "MERN Stack Developer",
-          "Flutter Developer",
-        ],
+        strings: ["Software Developer", "Freelancer", "MERN Stack Developer", "Flutter Developer"],
         autoStart: true,
         loop: true,
         cursor: "🖊",
@@ -72,11 +67,7 @@ const HomePage = () => {
             {roles}
           </Typography>
         </Box>
-        <img
-          src={developerSvg}
-          alt="Background"
-          style={{ width: "35%", height: "35%" }}
-        />
+        <img src={developerSvg} alt="Background" style={{ width: "35%", height: "35%" }} />
       </Box>
       <Box sx={{ position: "absolute", bottom: "10px", right: "10px" }}>
         <IconButton sx={{ width: "40px" }} onClick={scrollToLowerSection}>
@@ -95,10 +86,7 @@ const HomePage = () => {
       >
         <>
           <Typography variant="h5" sx={{ letterSpacing: "2px" }}>
-            LET ME{" "}
-            <span style={{ color: primaryColor, fontWeight: "900" }}>
-              INTRODUCE{" "}
-            </span>
+            LET ME <span style={{ color: primaryColor, fontWeight: "900" }}>INTRODUCE </span>
             MYSELF
           </Typography>
           <Divider
@@ -120,17 +108,13 @@ const HomePage = () => {
             gap: "10rem",
           }}
         >
-          <Typography
-            variant="h6"
-            sx={{ letterSpacing: "1.1px", lineHeight: "2.2rem" }}
-          >
+          <Typography variant="h6" sx={{ letterSpacing: "1.1px", lineHeight: "2.2rem" }}>
             💻 A versatile Full-stack developer passionate about crafting with{" "}
             <span style={{ color: primaryColor }}> JS and Flutter.</span>
             <br /> Constantly refining skills for the next level. Solving{" "}
             <span style={{ color: primaryColor }}>real-world </span>
-            problems through code is my forte. <br /> Off-screen, you'll find me
-            exploring new places. Let's build, innovate, and journey together!
-            🚀🚀
+            problems through code is my forte. <br /> Off-screen, you'll find me exploring new places. Let's build,
+            innovate, and journey together! 🚀🚀
           </Typography>
           <Tilt>
             <Avatar src={me} sx={{ height: "300px", width: "300px" }} />
@@ -139,10 +123,7 @@ const HomePage = () => {
         <Box sx={{ paddingTop: "3rem" }}>
           <Typography variant="h5" sx={{ letterSpacing: "2px" }}>
             FEEL FREE TO
-            <span style={{ color: primaryColor, fontWeight: "900" }}>
-              {" "}
-              CONNECT
-            </span>
+            <span style={{ color: primaryColor, fontWeight: "900" }}> CONNECT</span>
           </Typography>
           <Divider
             sx={{
