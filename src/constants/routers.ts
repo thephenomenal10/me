@@ -3,7 +3,7 @@ const ROUTER = {
     path: "/",
   },
   HOME: {
-    path: "/home",
+    path: "/me",
   },
   ABOUT: {
     path: "/about",
