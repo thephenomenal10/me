@@ -28,6 +28,7 @@ const ToolsCard = () => {
           paddingX: "1rem",
           paddingY: "1rem",
           width: "35%",
+          minWidth: "230px",
           backgroundColor: "transparent",
           border: "2px solid #42e7eb",
           borderRadius: "6px",

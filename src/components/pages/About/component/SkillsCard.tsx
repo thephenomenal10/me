@@ -40,8 +40,8 @@ const SkillsCard = () => {
         sx={{
           paddingX: "1rem",
           paddingY: "1rem",
-
           width: "55%",
+          minWidth: "250px",
           backgroundColor: "transparent",
           border: "2px solid #42e7eb",
           borderRadius: "6px",
@@ -59,7 +59,7 @@ const SkillsCard = () => {
           <Divider
             sx={{
               color: primaryColor,
-              width: { xs: "30px", sm: "70px", md: "100px", lg: "130px" },
+              width: { xs: "30px", sm: "40px", md: "40px", lg: "50px" },
               borderColor: "unset",
               borderWidth: "1px",
             }}
