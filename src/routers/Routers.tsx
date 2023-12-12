@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 
 import { HomePage, AboutMePage } from "../components/pages";
@@ -39,7 +39,7 @@ const routers = [
 
 const Router: React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <ErrorHandler>
         <Suspense fallback={<Loading />}>
@@ -50,7 +50,7 @@ const Router: React.FC = () => {
           </Routes>
         </Suspense>
       </ErrorHandler>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
