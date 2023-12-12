@@ -40,19 +40,19 @@ export const TEXT_STYLES: IGlobalTextStyles = {
   textDisplayH5: {
     fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.4rem", lg: "1.8rem" },
     fontWeight: 400,
-    lineHeight: "2rem",
+    lineHeight: { xs: "1.2rem", sm: "2.0rem", md: "2.5rem", lg: "2.5rem" },
     letterSpacing: "2px",
   },
   textDisplayH6: {
     fontSize: { xs: "0.7rem", sm: "0.8rem", md: "1.2rem", lg: "1.2rem" },
     fontWeight: 400,
-    lineHeight: { xs: "1.4rem", sm: "1.6rem", md: "2.0rem", lg: "2.2rem" },
+    lineHeight: { xs: "1.1rem", sm: "1.1rem", md: "1.5rem", lg: "1.5rem" },
     letterSpacing: { sm: "1px", md: "1.3px", lg: "1.3px" },
   },
   textMicro: {
-    fontSize: { xs: "0.2rem", sm: "0.3rem", md: "0.5rem", lg: "0.6rem" },
+    fontSize: { xs: "0.6rem", sm: "0.7rem", md: "0.8rem", lg: "0.9rem" },
     fontWeight: 400,
-    lineHeight: "0.813rem",
+    lineHeight: { xs: "1.1rem", sm: "1.1rem", md: "1.5rem", lg: "1.5rem" },
     letterSpacing: "0.25px",
   },
 };

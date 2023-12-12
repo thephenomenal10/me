@@ -7,6 +7,7 @@ import ErrorHandler from "../components/common/ErrorHandler";
 import Loading from "../components/common/Loading";
 import NavBar from "../components/common/NavBar";
 import ResumePage from "../components/pages/Resume/ResumePage";
+import WorkExp from "../components/pages/Work/WorkExp";
 
 const routers = [
   {
@@ -27,6 +28,11 @@ const routers = [
   {
     path: ROUTER.RESUME.path,
     element: <ResumePage />,
+    caseSensitive: true,
+  },
+  {
+    path: ROUTER.WORK_EXPERIENCE.path,
+    element: <WorkExp />,
     caseSensitive: true,
   },
 ];
