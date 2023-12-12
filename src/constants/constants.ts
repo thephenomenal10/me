@@ -25,7 +25,7 @@ const WORK_EXP_RIKTAM_INTERN = {
 const RED_POSITIVE_TECH_EXP = {
   title: "Flutter Developer - Internship",
   organization: "RedPositive Service OPC Pvt. Ltd",
-  timePeriod: "May 2020 - July 2021",
+  timePeriod: "May 2020 - July 2020",
   summary: [
     "Collaborated within a 2-member team to develop customer and vendor apps for an online Tiffin Service, addressing both major mobile platforms.",
     "Incorporated a map feature to empower customers in locating nearby Tiffin providers, enhancing the user interface and ordering process.",
