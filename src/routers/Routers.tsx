@@ -15,11 +15,11 @@ const routers = [
     element: <HomePage />,
     caseSensitive: true,
   },
-  {
-    path: ROUTER.HOME.path,
-    element: <HomePage />,
-    caseSensitive: true,
-  },
+  // {
+  //   path: ROUTER.HOME.path,
+  //   element: <HomePage />,
+  //   caseSensitive: true,
+  // },
   {
     path: ROUTER.ABOUT.path,
     element: <AboutMePage />,

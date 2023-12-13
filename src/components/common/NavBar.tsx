@@ -24,7 +24,7 @@ const NavBar = () => {
 
   const drawerWidth = 240;
   const navItems = [
-    { item: "Home", path: ROUTER.HOME.path },
+    { item: "Home", path: ROUTER.ROOT.path },
     { item: "About", path: ROUTER.ABOUT.path },
     { item: "Experience", path: ROUTER.WORK_EXPERIENCE.path },
     { item: "Resume", path: ROUTER.RESUME.path },

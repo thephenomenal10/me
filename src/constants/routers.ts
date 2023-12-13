@@ -2,9 +2,9 @@ const ROUTER = {
   ROOT: {
     path: "/",
   },
-  HOME: {
-    path: "/me",
-  },
+  // HOME: {
+  //   path: "/me",
+  // },
   ABOUT: {
     path: "/about",
   },
