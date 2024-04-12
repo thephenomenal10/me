@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material";
 
-import resumePdf from "../../../assets/resume.pdf";
+import resumePdf from "../../../assets/sahyog_resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
